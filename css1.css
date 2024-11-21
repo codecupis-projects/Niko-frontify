@@ -1,0 +1,443 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900';
+@import 'https://htmldemo.net/corano/corano/assets/css/vendor/pe-icon-7-stroke.css';
+@import 'https://htmldemo.net/corano/corano/assets/css/vendor/font-awesome.min.css';
+:root{
+    --rgbkh:rgb(80, 80, 80);
+}
+html,body , form {
+    padding: 0px;
+    margin: 0px;
+}
+.welcom-message{
+    color: rgb(80, 80, 80);
+    padding: 0px 20px;
+  
+    font-size: 15px;
+}
+#s1{
+    cursor: pointer;
+}
+#s{
+    cursor: pointer;
+}
+.divone{
+    margin-top: 20px;
+    height: 50px;
+   display:flex;
+   justify-content: space-around; /*----------------*/
+  
+}
+.divsocial{
+    height: 50px;
+    width: 35%;
+    direction: ltr;
+
+}
+.logodiv{
+   width: 20%;
+    text-align: center;
+    height: 50px;
+    display: inline-block;
+  
+}
+.diviconrtl{
+    height: 50px;
+    width: 35%;
+    direction: rtl;
+}
+.logoimg{
+    margin-top: 15px;
+   
+}
+.divh{
+    display: flex;
+    justify-content: space-around;
+}
+#div1{
+ 
+    display: inline-block;
+    height: 40px;
+    width: 40%;
+}
+#div2{
+    
+    direction: rtl;
+    width: 40%;
+    height: 40px;
+}
+.ul{
+
+    list-style-type: none;
+    padding-right: 0px;
+   
+    
+    
+}
+
+.ul1{
+    width: 100px;
+    border: 1px solid #f5f5f5;
+    z-index: 1;
+    position: absolute;
+    padding: 20px;
+    padding-left: 10px;
+    list-style: none;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  opacity: 0;/*-----*/
+  transition: 0.5s ease;/*-----*/
+}
+#ul1{
+    right: 50px;
+}
+#ul2{
+    right: 170px;
+}
+
+.li:hover > ul{
+    opacity: 1;/*-----*/
+    visibility: visible;
+    
+}
+.li{
+    color: rgb(80, 80, 80);
+    display: inline;
+
+}
+.ul ul{
+    text-align: left;
+   
+}
+.li2{
+    transition: color 0.5s ease;
+    color: rgb(80, 80, 80);
+    padding-left: -5px;
+    padding:5px 5px;
+}
+.li2:hover{
+    color: #c29958;
+}
+#s::after{
+ content: "$";
+ color: rgb(80, 80, 80);
+}               
+#s1::after{
+    content:"|";
+    color: rgb(196, 196, 196);
+    margin-right: 15px;
+}
+.divsocial ul{
+   margin-top: 0px; /*----------------*/
+    list-style-type: none;
+    position: absolute; /*----------------*/
+   
+   
+}
+.divsocial ul li{
+    display: inline-block;
+}
+.divsocial i{
+    transition: color 0.5s ease;
+    color: rgb(136, 135, 135);
+    text-align: left;
+    padding: 10px;
+}
+.divsocial i:hover{
+    color: #c29958;
+    cursor: pointer;
+}
+.diviconrtl ul {
+    margin-top: 0px; /*----------------*/
+    position: relative;
+    list-style-type: none;
+    /* display: flex; */
+    direction: rtl;
+    text-align: right;
+    margin-right: -5px;
+}
+.diviconrtl ul li{
+    display: inline-block;
+}
+.diviconrtl i{
+    color: rgb(80, 80, 80);
+    padding: 12px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.icon i{
+    transition: color 0.5s ease;
+    color: rgb(80, 80, 80);
+}
+.icon:hover i{
+    color: #c29958;
+}
+.diviconrtl button{
+    color: rgb(80, 80, 80);
+    background-color: #ffffff;
+    border: 0px;
+}
+.diviconrtl .notif{
+    top: 2px;
+    right: 96px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #c29958;
+}
+.diviconrtl .notif1{
+    top: 3px;
+    right: 148px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #c29958;
+}
+/* .sticky{
+position: sticky;
+   top: 0;
+} *//*منو فیکس نشد و باعث میشد زیر منوها دیگه نیان*/
+.menu{
+   
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.menu .menuul{
+    text-align: center;
+    list-style-type: none;
+}
+.Home{
+    cursor: pointer;
+    position: relative;
+}
+.Home, .Pages, .Shop, .Blog, .Contact {
+    padding: 15px ;
+    display: inline-block;
+}
+.Home span{
+    color: #c29958;
+}
+.menu{
+    text-align: center;
+    color: #222222;
+}
+.Home ul{
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    list-style-type: none;
+    padding: 42px 2px;
+    opacity: 0;
+    /* color: var(--rgbkh); */
+    color: #802222;/*رنگ اعمال شد؟*/
+    transition: 0.5s ease;
+}
+.Home li{
+    width: 180px;
+
+} 
+.Home div{
+    z-index: 40;
+    visibility: hidden;
+    opacity: 0;
+    padding: 10px 40px;
+    width: 130px;
+    height: 50px;
+    position: absolute;
+    transition: 0.5s ease;
+}
+.Home:hover div{
+    visibility: visible;
+    opacity: 1;
+}
+.Home ul li{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+}
+.Home .homeli:not(:last-of-type){
+    border-bottom: 1px dashed #efefef;
+}
+.Home:hover  ul{
+    opacity: 1;
+    visibility: visible;
+}
+.Home ul{
+    color: rgb(80, 80, 80);
+}
+.Home a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
+    color: #646464;
+}
+.Home a::before{
+    content: "";
+    width: 0px;
+    height: 2px;
+    margin: 0px 3px;
+    background-color: #646464;
+    transition: all 100ms ease-in;
+}
+.Home li:hover a::before{
+    width: 8px;
+    background-color: #c29958;
+}
+.Home li:hover a{
+    color: #c29958;
+}
+.menu a {
+    color: #222222;
+    transition: color 0.5s ease;
+}
+.menu a{
+    text-decoration: none;
+    color: #222222;
+}
+.Pages{
+    position: relative;
+}
+.Pages a{
+    text-decoration: none;
+}
+.menu a:hover{
+   color: #c29958;
+   cursor: pointer; 
+}
+
+.Pages ul{
+    list-style-type: none;
+    display: none;
+    position: absolute;
+
+}
+.Pages:hover ul{
+    display: block;
+}
+.Shop:hover{
+    color: #c29958;
+    cursor: pointer;
+}
+.Blog:hover{
+    color: #c29958;
+    cursor: pointer;
+}
+.Contact:hover{
+   color: #c29958;
+   cursor: pointer;
+    
+}
+.section1{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  
+}
+.section1 img{ /*افکت اسلایدر*/
+    width: 0;
+    height: 0;
+}
+.section1 img.show{ /*افکت اسلایدر*/
+    transition: 2s;
+    width: 100%;
+    height: 100%;
+}
+.section1 .slider{
+    overflow: hidden;
+    position: relative;
+}
+.section1 .slides{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.section1 .slides .slide{
+    width: 100%;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+#slide1 .text{
+    box-sizing: border-box;
+    display: inline-block;
+    position: absolute;
+    top:70px;
+    left: 50px;
+    color: #222222;
+    font-size: 65px;
+    font-weight: normal;
+}
+#slide1 .text1{
+    font-family: "Lato", sans-serif;
+    display: inline-block;
+    position: absolute;
+    top:260px;
+    left: 50px;
+    color: rgb(61, 61, 61);
+    font-size: 20px;
+    font-weight: normal;
+}
+.slides .text2{
+    position: absolute;
+    top:100px;
+    left: 50px;
+    color: #222222;
+    font-size: 65px;
+}
+.slides .readmore{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    top:330px;
+    left: 50px;
+    background-color: #c29958;
+    position: absolute;
+    display: inline-block;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+}
+.slides .text3{
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    top:270px;
+    left: 50px;
+    color: rgb(61, 61, 61);
+    font-size: 20px;
+}
+.slides img{
+    width: 100%;
+    height:80vh;
+}
+
+.section2 .div1{
+    margin-top: 30px;
+    padding-top: 30px;
+    /* border: 1px solid black; */
+   justify-content: center;
+   text-align: center;
+  
+}
+.section2 p{
+    color:#222222;
+}
