@@ -203,10 +203,6 @@ html,body , form {
     border-radius: 50%;
     background-color: #c29958;
 }
-/* .sticky{
-position: sticky;
-   top: 0;
-} *//*منو فیکس نشد و باعث میشد زیر منوها دیگه نیان*/
 .menu{
    
     margin-top: 50px;
@@ -290,7 +286,7 @@ position: sticky;
     height: 2px;
     margin: 0px 3px;
     background-color: #646464;
-    transition: all 100ms ease-in;
+    transition: all 150ms ease-in;
 }
 .Home li:hover a::before{
     width: 8px;
